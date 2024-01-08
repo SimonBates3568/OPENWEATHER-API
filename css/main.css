@@ -1,0 +1,214 @@
+/* UNIVERSAL-SELECTORS-START */
+:root {
+  
+  --background-color:whitesmoke;
+  --background:lightblue;
+  --border:rgba(0, 0, 0, 0.822);
+  
+  
+}
+/* UNIVERSAL-SELECTORS-FINISH */
+
+/* TYPE-SELECTORS-START */
+
+html {
+  margin: 0;
+  font-family: monospace;
+  background:var(--background);
+}
+img {
+  width:100%;
+  height:95%;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  z-index: 1;
+  border-radius: 0%;
+   filter: blur(2px);  
+}
+h2 {
+font-weight:bolder;
+}
+
+footer{
+position: absolute;
+bottom: 0%;
+left: 40%;
+}
+
+
+/* TYPE-SELECTORS-FINISH */
+
+
+/* CLASS-SELECTORS-START */
+
+/* SPINNING WHEEL LOADING */
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  z-index: 2;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block; 
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--border);
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* CLASS-SELECTORS-FINISH */
+
+/* ATTRIBUTE-SELECTORS-START */
+/* ATTRIBUTE-SELECTORS-FINISH */
+
+/* PSEUDO-CLASSES-START */
+/* PSEUDO-CLASSES-FINISH */
+
+
+/* ID-SELECTORS-START */
+#weather-container {
+box-shadow: 10px 10px 20px rgb(0, 0, 0);
+border: 2px solid var(--border);
+background-color:var(--background-color);
+position: absolute;
+left: 10%;
+top:5%;
+width: 190px;
+height: 100px;
+border-radius: 15px;
+padding-top: 10px;
+padding-bottom: 140px;
+padding-left: 50px;
+padding-right: 0%;
+z-index: 2;
+}
+
+#weather-info {
+  color: black ;
+  font-weight:bolder;
+  font-size:large ;
+ line-height:1.0 ;
+ letter-spacing: 4px;
+  position: absolute;
+  top: 110%;
+  z-index: 1;
+}
+
+#loadingIndicator{
+ /*  display: none; */ 
+  /* text-align: center; */
+  /* padding: 20px; */
+  color:black;
+  font-size: 16px;
+  z-index: 2;
+} 
+/* ID-SELECTORS-FINISH */
+
+
+
+
+
+
+
+
+
+
+/* Styles for devices with a screen width up to 320px (iPhone SE portrait mode) */
+@media only screen and (max-width: 320px) {
+  /* Your styles for iPhone SE go here */
+
+  /* Example: Adjust font size for small screens */
+  body {
+    font-size: 14px;
+  }
+
+  /* Example: Hide certain elements on small screens */
+  .hidden-on-se {
+    display: none
+
+/* Styles for devices with a screen width up to 320px (iPhone SE portrait mode) */
+@media only screen and (max-width: 320px) {
+  /* Your styles for iPhone SE portrait mode go here */
+}
+
+/* Styles for devices with a screen width up to 568px (iPhone SE landscape mode) */
+@media only screen and (max-width: 568px) {
+  /* Your styles for iPhone SE landscape mode go here */
+}

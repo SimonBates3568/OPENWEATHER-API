@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/script.js"></script>
+
+</head>
+
+<!--BACKGROUND-IMG-->
+
+<img src="pic/https___gratisography.com_wp-content_uploads_2023_01_gratisography-rain-cloud-free-stock-photo.jpg" alt="raincloud" width="2304" height="1536">
+
+<body>
+
+<!--WEATHER-CONTAINER-->
+<div id="weather-container">
+
+<!--LOADING-IDICATOR-WHILST-IT-GENERATES-API-START-->
+<!-- <div id="loading-indicator">Loading...</div> -->
+<br> 
+<div id="loadingIndicator" class="lds-roller hidden"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+<!--LOADING-IDICATOR-WHILST-IT-GENERATES-API-FINISH-->
+
+
+    <h2>Weather App</h2>
+    <label for="city">Enter City:</label>
+    <br>
+    <input type="text" id="city" placeholder="Enter city name">
+    <br>
+    <button id="myButton"  onclick="getWeather()">Get Weather</button>
+    <div id="weather-info"></div>
+    
+  </div>
+
+
+<footer>
+  <p>&copy; 2024 CubiColour.</p>
+</footer>
+
+</body>
+</html>
