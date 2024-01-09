@@ -39,6 +39,8 @@ function endLoading() {
 //OPENWEATHER API KEY
     const apiKey = 'cc335e5d0c49bacf914f73d9dc595e52';
 
+
+
 //ONCLICK
     function getWeather() {
       const city = document.getElementById('city').value;
@@ -50,8 +52,8 @@ function endLoading() {
       }
 
       showLoading();
-
-      const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+//API CALL ON UNITS FROM IMPERIAL = METRIC
+      const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
       //checks if the response has a "cod" property with the value '404', and if true, it displays an alert saying "City not found.
       fetch(apiUrl)

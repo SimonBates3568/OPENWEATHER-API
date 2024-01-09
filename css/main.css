@@ -33,7 +33,7 @@ font-weight:bolder;
 footer{
 position: absolute;
 bottom: 0%;
-left: 40%;
+left: 45%;
 }
 
 
@@ -167,7 +167,7 @@ z-index: 2;
  line-height:1.0 ;
  letter-spacing: 4px;
   position: absolute;
-  top: 110%;
+  top: 100%;
   z-index: 1;
 }
 
